@@ -1,0 +1,67 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --obs-pink: #F16BCB;
+}
+
+@font-face {
+  font-family: "PPObjectSans-Medium";
+  src: url("/assets/fonts/PPObjectSans-Medium.ttf");
+}
+
+@font-face {
+  font-family: "PPObjectSans-Regular";
+  src: url("/assets/fonts/PPObjectSans-Regular.ttf");
+  font-weight: 400;
+}
+
+@font-face {
+  font-family: "OpenSans";
+  src: url("/assets/fonts/Open_Sans/OpenSans-VariableFont_wdth,wght.ttf");
+}
+
+.obj-sans-medium {
+  font-family: "PPObjectSans-Medium";
+}
+
+.obj-sans-normal {
+  font-family: "PPObjectSans-Regular";
+}
+
+.open-sans {
+  font-family: 'OpenSans';
+}
+
+/* ------------------ */
+
+.text-wrapper {
+  position: relative;
+  overflow: hidden;
+}
+
+.text-elevator,
+.text-duplicate {
+  display: inline-block;
+  position: absolute;
+  transition: transform 0.5s ease, opacity 0.5s ease;
+}
+
+.text-elevator {
+  opacity: 1;
+}
+
+.text-duplicate {
+  opacity: 0;
+  transform: translateY(100%);
+}
+
+.gradient-bg {
+  width: 56rem;
+  height: 80rem;
+  background: radial-gradient(circle, rgba(40, 76, 184, 1) 0%, rgba(34, 193, 195, 0) 70%),
+    radial-gradient(circle, rgb(18, 34, 80) 0%, rgba(253, 187, 45, 0) 70%);
+  border-radius: 50%;
+  filter: blur(5rem);
+}

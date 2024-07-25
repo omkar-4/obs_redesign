@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link
+      rel="icon"
+      type="image/svg+xml"
+      href="/assets/brand_assets/logo_modified.png"
+    />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>OBS Project</title>
+    <link rel="stylesheet" href="src/css/styles.css" />
+  </head>
+  <body
+    class="w-full h-full bg-black text-white flex justify-center items-start"
+  >
+    <!-- Design :
+      ### Goal Prompt -
+        - This is the entry point page index.html for the website. This will contain the HOME section/page
+        
+      ### Content :
+      /public
+      /assets
+        /brand_assets
+        /design
+        /fonts
+          PPObjectSans-Medium
+          PPObjectSans-Regular
+        /images
+        
+      /src
+        /css
+          styles.css
+          remixicon.css
+        /js
+          app.js
+
+      ### structure/architecture :
+      /
+      main
+      header
+        div#brand_identity
+          div#header-logo
+            img-logo_modified_dt.png
+          div#header_obs_title
+        nav
+          div#nav_home
+      section#hero_section
+
+      footer
+
+    -->
+    <main class="max-w-screen-2xl place-self-center h-full w-full p-5 relative">
+      <div
+        class="gradient-bg rounded-full absolute top-40 left-36 -z-50 -translate-y-[70%]"
+      ></div>
+
+      <header class="w-full h-fit flex justify-between items-start">
+        <div id="brand_identity" class="flex justify-center items-center gap-3">
+          <div id="header-logo" class="w-12 h-auto">
+            <img
+              src="/assets/brand_assets/logo_modified_dt.png"
+              alt="header-logo-img"
+            />
+          </div>
+          <div
+            id="header_obs_title"
+            class="uppercase bg-white text-black w-fit h-fit py-1 px-3 rounded-xl open-sans font-bold"
+          >
+            <span class="inline-block text-md">obs</span>
+          </div>
+        </div>
+        <nav
+          class="hidden md:flex flex-row justify-start items-start lg:gap-10 text-nowrap"
+        >
+          <div id="nav_home" class="hidden md:flex flex-col gap-2">
+            <div class="flex gap-2 relative">
+              <i class="ri-add-line absolute top-0 -left-6"></i>
+              <a
+                href="#"
+                class="hover:text-obs-pink hover:translate-x-4 transition-all"
+                >Home</a
+              >
+            </div>
+            <div>
+              <ul class="flex flex-col gap-2 no-underline">
+                <li
+                  class="hover:text-obs-pink hover:translate-x-2 transition-all text-elevator"
+                >
+                  <a href="#">production-tools</a>
+                </li>
+                <li
+                  class="hover:text-obs-pink hover:translate-x-2 transition-all text-elevator"
+                >
+                  <a href="#">sponsors</a>
+                </li>
+                <li
+                  class="hover:text-obs-pink hover:translate-x-2 transition-all text-elevator"
+                >
+                  <a href="#">developer-collab</a>
+                </li>
+                <li
+                  class="hover:text-obs-pink hover:translate-x-2 transition-all text-elevator"
+                >
+                  <a href="#">features</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div id="nav_nothome" class="w-fit h-auto">
+            <ul
+              class="hidden md:flex flex-row justify-between items-center md:gap-5 lg:gap-10 elevator-effect text-container"
+            >
+              <li class="hover:text-obs-pink text-elevator">
+                <a href="#">download</a>
+              </li>
+              <li class="hover:text-obs-pink text-elevator">
+                <a href="#">learn</a>
+              </li>
+              <li class="hover:text-obs-pink text-elevator">
+                <a href="#">blog</a>
+              </li>
+              <li class="hover:text-obs-pink text-elevator">
+                <a href="#">support</a>
+              </li>
+              <li class="hover:text-obs-pink text-elevator">
+                <a href="#">community & dev</a>
+              </li>
+            </ul>
+          </div>
+        </nav>
+      </header>
+
+      <section id="hero_section" class="mt-10">
+        <div id="hero_obs_studio" class="flex gap-10 flex-col md:flex-row">
+          <div id="hero_obs">
+            <h1 class="relative uppercase text-9xl obj-sans-medium">
+              obs
+              <span
+                class="absolute -top-4 left-4 capitalize text-base obj-sans-normal text-[#c3c3c3]"
+                >open broadcasting software</span
+              >
+            </h1>
+          </div>
+          <div id="hero_studio">
+            <h1 class="relative uppercase text-9xl obj-sans-medium">
+              studio
+              <span
+                class="absolute -z-40 w-52 inline-block -top-6 left-1/2 capitalize text-base obj-sans-normal text-[#c3c3c3]"
+                ><img src="./public/assets/images/blue_ball.png" alt=""
+              /></span>
+            </h1>
+          </div>
+          <div id="hero_spoke"></div>
+        </div>
+      </section>
+    </main>
+    <script type="module" src="./src/js/app.js"></script>
+  </body>
+</html>

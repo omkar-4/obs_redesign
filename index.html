@@ -50,7 +50,7 @@
       footer
 
     -->
-    <main class="max-w-screen-2xl place-self-center h-full w-full p-5 relative">
+    <main class="max-w-screen-2xl h-full w-full p-5 relative">
       <div
         class="gradient-bg rounded-full absolute top-40 left-36 -z-50 -translate-y-[70%]"
       ></div>
@@ -71,9 +71,9 @@
           </div>
         </div>
         <nav
-          class="hidden md:flex flex-row justify-start items-start lg:gap-10 text-nowrap"
+          class="hidden md:flex flex-row justify-between items-start lg:gap-10 text-nowrap"
         >
-          <div id="nav_home" class="hidden md:flex flex-col gap-2">
+          <div id="nav_home" class="flex flex-col gap-2">
             <div class="flex gap-2 relative">
               <i class="ri-add-line absolute top-0 -left-6"></i>
               <a
@@ -107,7 +107,7 @@
               </ul>
             </div>
           </div>
-          <div id="nav_nothome" class="w-fit h-auto">
+          <div id="nav_nothome" class="flex sm:w-fit h-auto">
             <ul
               class="hidden md:flex flex-row justify-between items-center md:gap-5 lg:gap-10 elevator-effect text-container"
             >
@@ -129,25 +129,26 @@
             </ul>
           </div>
         </nav>
+        <span class="inline-flex md:hidden"><i class="ri-menu-line text-2xl"></i></span>
       </header>
 
-      <section id="hero_section" class="mt-10">
-        <div id="hero_obs_studio" class="flex gap-10 flex-col md:flex-row">
+      <section id="hero_section" class="mt-28 sm:px-20 sm:mt-16">
+        <div id="hero_obs_studio" class="flex leading-none gap-2 flex-col md:flex-row">
           <div id="hero_obs">
-            <h1 class="relative uppercase text-9xl obj-sans-medium">
+            <h1 class="relative uppercase text-white text-[5rem] tracking-tight sm:text-[10vw] obj-sans-medium">
               obs
               <span
-                class="absolute -top-4 left-4 capitalize text-base obj-sans-normal text-[#c3c3c3]"
+                class="absolute -top-8 left-2 capitalize text-sm tracking-normal obj-sans-medium text-[#c3c3c3] text-nowrap"
                 >open broadcasting software</span
               >
             </h1>
           </div>
           <div id="hero_studio">
-            <h1 class="relative uppercase text-9xl obj-sans-medium">
+            <h1 class="relative uppercase text-[5rem] sm:text-[10vw] tracking-tight obj-sans-medium">
               studio
               <span
-                class="absolute -z-40 w-52 inline-block -top-6 left-1/2 capitalize text-base obj-sans-normal text-[#c3c3c3]"
-                ><img src="./public/assets/images/blue_ball.png" alt=""
+                class="absolute -z-40 w-44 inline-block -top-10 left-1/2 capitalize text-base obj-sans-normal"
+                ><img src="/assets/images/blue_ball.png" alt=""
               /></span>
             </h1>
           </div>
